@@ -1,0 +1,80 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.image_sm{
+    width: 120px; 
+    height: 120px;
+}
+.image_md{
+    width: 240px; 
+    height: 240px;
+}
+
+.card{
+    display: block;
+    width: 30%;
+    padding: 10px 20px;
+    height: 500px;
+    float: left;
+    text-align: center;
+}
+
+.card img{
+    width: auto; 
+    height: 240px;
+}
+.card img:hover { 
+    transform: scale(1.5); 
+}
+
+.card p{
+    color: saddlebrown;
+}
+
+.card h2{
+    color: chocolate;
+}
+
+.title{
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+.title img{
+    width: auto;
+    height: 360px;
+}
+
+.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu li{    
+   float: left;
+   width: 100px;
+   text-align: center;
+   border: solid 1px chocolate;
+}
+
+.menu li a{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: chocolate;
+}
+
+
+.menu li a:hover:not(.active) {
+    background-color: chocolate;
+    color: white;
+}
+
+.menu li a.active{    
+    background-color: chocolate;
+    color: white;
+}
