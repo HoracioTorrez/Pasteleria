@@ -1,5 +1,6 @@
 body{
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 .image_sm{
@@ -51,21 +52,24 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
+    height: 100%;
+    float: right;
 }
 
 .menu li{    
    float: left;
    width: 100px;
+   height: 100%;
    text-align: center;
-   border: solid 1px chocolate;
 }
 
 .menu li a{
     display: block;
-    padding: 5px;
     text-decoration: none;
     font-weight: bold;
     color: chocolate;
+    height: 100%;
+    padding-top: 20px;
 }
 
 
@@ -77,4 +81,66 @@ body{
 .menu li a.active{    
     background-color: chocolate;
     color: white;
+}
+
+.navbar{
+    position: fixed;
+    width: 100vw;
+    height: 60px;
+    background-color: white;
+    border-bottom:solid 2px chocolate;
+    margin: 0;
+    padding: 0;
+}
+.navbar .logo{
+    height: 60px;
+    width: auto;
+}
+
+.bg1{
+    background-image: url('../imagenes/2.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    
+
+    background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 0, 0.5),
+    rgba(0, 0, 255, 0.5)
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent chocolate;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: chocolate;
+  border-radius: 5px;
+  border: 3px solid white;
 }
