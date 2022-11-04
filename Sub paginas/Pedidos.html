@@ -1,34 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedidos</title>
+    <link rel="stylesheet" href="../estilos.css/estilo-pedido.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <div id="menu">
-          
-        <ul> 
-            <li class="item-r"> <a href="../Inicio.html" target="_blank">Inicio</a></li> 
-            <li class="item-r"> <a href="./Sub paginas/Productos.html" target="_blank">Productos</a></li> 
-            <li class="item-r"> <a href="./Sub paginas/Pedidos.html" target="_blank"> Pedidos</a> </li>
-            <li class="item-r"> <a href="./Sub paginas/Contacto.html" target="_blank">Contacto</a></li> 
-       
+<body class="bg1">
+    <div class="navbar">
+        <img src="../imagenes/4.png" alt="logo Pasteles" class="logo">
+        <ul class="menu">
+            <li class="item-r"> <a href="../Index.html">Inicio</a></li>
+            <li class="item-r"> <a href="../Sub paginas/Productos.html">Productos</a>
+            <li class="item-r"> <a href="#" class="active"> Pedidos</a> </li>
+            <li class="item-r"> <a href="../Sub paginas/Contacto.html">Contacto</a></li>
         </ul>
     </div>
+    <br>
+    <p>&nbsp;</p>
 
-    <section class="encabezado">
-        <img src="../imagenes/4.png" alt="logo Pasteles">
-    </section>
+    <div class="titulo">
+        <h1>Pedidos</h1>
+        <hr>
+    </div>
+    <div class="titulo">
+        <h2>Gracias por elegir nuestros productos</h2>
+    </div>
+    <div class="titulo">
+        <h3>Por favor llena el siguiente formulario para poder realizar tu pedido</h3>
+    </div>
+    <section class="flex">
+                <form>
+            <h3>Datos Personales</h3>
+            <!--<label for="nombre">Datos Personales</label><br><br>-->
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre/s"><br><br>
+            <!--label for="apellidos">Apellidos</label><br>-->
+            <input type="text" id="apellido" name="apellido" placeholder="Apellidos"><br><br>
+            <input type="tel" id="tel1" name="tel1" maxlength="10" placeholder="Telefono"><br><br>
+            <input type="email" id="correo1" name="correo1" placeholder="Email"><br><br>
+        </form>
+    </div>
+    <div class="pago">
+        <h3>¿Como quieres realizar tu pago?</h3><br>
+        <input type="radio" id="Tarjeta" name="Pago" value="Tarjeta">
+        <label for="Tarjeta"><b>Tarjeta de Credito/Debito</b></label>
+        <input type="radio" id="Transferencia" name="Pago" value="Transferencia">
+        <label for="Transferencia"><b>Transferencia Interbancaria</b></label><br><br>
+    </div> <br><br>
+    </section><hr>
 
-    <h1>Pedidos</h1>
-    <hr>
-    <h2>Para realizar tu pedido completa el siguiente formulario</h2>
+    <div class="titulo2">
+        <h1>Productos</h1>
+    </div>
+<section class="flex2">
+    <div class="especial">
 
-    
+        <h3><input type="radio" id="Especialidades" name="Especialidades"> <label
+                for="Especialidades">Especialidades</label>
+        </h3><br><br>
+
+
+        <div class="espacial">
+            <label for="Especialidades"><b>Elige tu pastel</b></label>
+            <select id="Especialidades">
+
+                <option value="Lunar">Lunar</option>
+                <option value="Sputnik">Sputnik</option>
+                <option value="Asteroide">Asteroide</option>
+                <option value="Nebula">Nebula</option>
+                <option value="Júpiter">Júpiter</option>
+                <option value="Osa Mayor">Osa Mayor</option>
+            </select><br><br>
+            <label for="Cantidad"><b>Cantidad</b></label>
+            <input type="number" id="Cantidad" name="Cantidad"><br><br>
+        </div>
+    </div>
+
+    <div class="Sabor">
+        <h3><input type="radio" id="Sabores" name="Sabores">
+            <label for="Sabores"> Sabores Tradicionales </label>
+        </h3>
+        <div class="tradicionales">
+
+            <input type="checkbox" id="topping1" name="topping1" value="Fresa">
+            <label for="topping1"><b>Fresa</label></b><br>
+            <input type="checkbox" id="topping2" name="topping2" value="Durazno">
+            <label for="topping2"><b>Durazno</b></label><br>
+            <input type="checkbox" id="topping3" name="topping3" value="Mango">
+            <label for="topping3"><b>Mango</b></label><br>
+            <input type="checkbox" id="topping3" name="topping3" value="Limón">
+            <label for="topping3"><b>Limón</b></label><br>
+            <input type="checkbox" id="topping3" name="topping3" value="Moras">
+            <label for="topping3"><b>Moras</b></label><br><br>
+
+        </div>
+        <label for="Cantidad"><b>Cantidad</b></label>
+        <input type="number" id="Cantidad" name="Cantidad"><br><br>
+
+
+    </div>
+    <div class="adornos">
+         <h3><input type="radio" id="Adornos" name="Adornos">
+            <label for="Adornos">Adornos</label></h3>
+        
+        <div class="adornitos">
+            <input type="checkbox" id="topping1" name="topping1" value="Astronauta">
+            <label for="topping1"><b>Astronauta</b></label><br>
+            <input type="checkbox" id="topping2" name="topping2" value="Muñeco Pastel de Boda">
+            <label for="topping2"><b>Muñeco Pastel de Boda</b></label><br>
+            <input type="checkbox" id="topping3" name="topping3" value="Velas Mágicas">
+            <label for="topping3"><b>Velas Mágicas</b></label><br><br>
+        </div>
+
+        <label for="Cantidad"><b>Cantidad</b></label>
+        <input type="number" id="Cantidad" name="Cantidad"><br><br>
+        
+    </div>
+</section>
+<hr>
+<hr>
+<section class="ultimo">    
+   <div class="masa">
+        <input type="radio" id="Masa" name="Masa" value="Masa">
+       <b><label for="Masa">Si deseas que la masa del bizcocho sea elaborado con ingredientes cannábicos aptos 100%
+                para su consumo, el costo total aumentaria $150.</label></b>
+    </div>
+    <div class="papel">
+               <label for=color ><b>Seleciona el color del papel de envoltura</b></label>
+        <input type="color" id="color" name="color"><br><br>
+        
+    </div>
+    <div class="comen">
+        <label for="Comentarios"><b>¿Quieres comentar o añadir algo mas?</b></label><br><br>
+        <input type="text" id="Comentarios" name="Comentarios" placeholder="Comentarios">
+        </div>
+    <br>
+    <br>
+</section>
+   <b><input type="button" id="boton" name="boton" value="Enviar Pedido"
+       onclick="alert('Esperamos que disfrutes tu experiencia Espacial');">
 
 
 </body>
+
 </html>

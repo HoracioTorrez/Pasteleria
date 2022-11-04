@@ -1,0 +1,368 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+hr{
+    border-color: black;
+    border-style: dotted;
+    
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    float: right;
+}
+
+.menu li {
+    float: left;
+    width: 100px;
+    height: 100%;
+    text-align: center;
+}
+
+.menu li a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: whitesmoke;
+    height: 100%;
+    padding-top: 20px;
+}
+
+
+.menu li a:hover:not(.active) {
+    background-color: darkviolet;
+    color: aqua;
+}
+
+.menu li a.active {
+    background-color: rgb(145, 40, 57);
+    ;
+    color: black;
+}
+
+.navbar {
+    position: fixed;
+    width: 100vw;
+    height: 60px;
+    background-color: black;
+    border-bottom: solid 2px darkviolet;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .logo {
+    height: 60px;
+    width: auto;
+}
+
+.bg1 {
+    background-image: linear-gradient(to bottom,
+            rgba(240, 240, 179, 0.521),
+            rgba(184, 34, 172, 0.39));
+    /*background-color: beige;*/
+
+}
+
+
+
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: transparent aqua;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: darkmagenta;
+    border-radius: 5px;
+    border: 3px solid white;
+}
+
+.titulo {
+    text-align: center;
+    color: rgba(187, 14, 14, 0.856);
+
+}
+
+.flex {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 150px;
+    
+
+}
+
+form {
+    width: 450px;
+    margin: auto;
+    background-color: rgb(194, 124, 167);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border-color: darkblue;
+    margin-top: 30px;
+    border: none;
+}
+
+h3 {
+    color: blue;
+    text-align: center;
+}
+
+form input {
+
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    border-color: blue;
+}
+
+.pago {
+    width: 450px;
+    margin: auto;
+    background-color: rgb(194, 124, 167);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    border-color: blue;
+    margin-top: 30px;
+    border: none;
+}
+
+.pago input {
+    width: 40%;
+    margin-bottom: 20px;
+    padding: 20px;
+    
+
+}
+
+.flex2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.especial {
+    width: 300px;
+    margin: auto;
+    background-color: rgb(194, 124, 167);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 55px;
+    border-color: blue;
+    margin-top: 30px;
+
+
+}
+
+.titulo2 {
+    text-align: center;
+    color: rgba(187, 14, 14, 0.856);
+}
+
+.especial h3 {
+    margin: auto;
+    color: blue;
+}
+
+
+.espacial #Especialidades {
+
+    display: block;
+    width: 36%;
+    margin-top: 20px;
+    color: darkblue;
+}
+
+.espacial label {
+    margin: auto;
+    padding-bottom: 20px;
+
+}
+
+.espacial #Cantidad {
+    color: rgb(103, 15, 218);
+    display: block;
+    margin-top: 10px;
+    width: 1cm;
+
+}
+
+.Sabor {
+    width: 300px;
+    margin: auto;
+    background-color: rgb(194, 124, 167);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 55px;
+    border-color: blue;
+    margin-top: 30px;
+
+}
+
+.Sabor h3 {
+    margin: auto;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    color: blue;
+}
+
+
+
+
+
+.Sabor #Cantidad {
+    
+    color: darkblue;
+    display: block;
+    margin-top: 10px;
+    width: 1cm;
+}
+
+.tradicionales {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    color: darkblue;
+
+
+
+}
+
+.tradicionales label {
+    display: inline-block;
+    margin: 5px;
+        padding-bottom: 10px;
+    border: 5px;
+    color: black;
+    font: bold;
+}
+
+.adornos {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    background-color: rgb(194, 124, 167);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 55px;
+    border-color: blue;
+    margin-top: 30px;
+}
+
+.adornitos h3 {
+
+
+    color: blue;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+
+.adornitos label {
+    display: inline-block;
+    margin: 5px;
+    ;
+    padding-bottom: 10px;
+    border: 5px;
+    color: black;
+
+}
+
+.adornos #Cantidad {
+
+    color: darkblue;
+    display: block;
+    margin-top: 10px;
+    width: 1cm;
+
+}
+
+.ultimo {      
+    width: 900px;
+    margin: auto;
+    background-color: rgb(194, 124, 167);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 55px;
+    border-color: blue;
+    margin-top: 30px;
+}
+
+.masa {
+    font-size: larger;
+    color: darkgreen;
+    text-decoration: underline;
+    text-decoration-color: black;
+    padding: 30px;
+}
+
+.papel {
+    display: inline-block;
+    color: darkblue;
+    padding: 30px;
+
+}
+
+.papel input {
+    margin-left: 70px;
+    background-color: white;
+}
+
+.comen {
+    display: block;
+    color: darkblue;
+    padding: 30px;
+}
+
+.comen #Comentarios {
+    text-align: start;
+    margin: 30px;
+    color: black;
+   font-display: bold;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height:30px
+    ;
+
+}
+
+#boton {
+    margin: 50px;
+    margin-left: 70%;
+    background-color: rgba(236, 30, 202, 0.89);
+    display: inline;
+    height: 1.8cm;
+    width: 5cm;
+    font-size: large;
+    border-radius: 50px;
+    border-style: double;
+    border: crimson;
+    font-family: fantasy;
+}
+
+#boton {
+
+    cursor: pointer;
+}
